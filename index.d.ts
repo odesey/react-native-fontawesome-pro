@@ -5,7 +5,7 @@ export interface IconProps extends ViewProps {
   name?: string;
   size?: number;
   color?: string;
-  type?: "regular" | "light" | "solid" | "brands";
+  type?: "regular" | "light" | "solid" | "brands" | "thin" | "duotone";
   containerStyle?: ViewStyle;
   iconStyle?: ViewStyle;
   onPress?: () => void;
