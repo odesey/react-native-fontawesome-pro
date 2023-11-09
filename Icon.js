@@ -30,14 +30,14 @@ const Icon = ( { name, size, color, type, containerStyle, iconStyle, onPress, ac
       style={iconStyle}
     >
       {Array.isArray(iconData[4]) ? (
-        <Fragment>
+        <>
           <Path d={iconData[4][0]} fill={color} opacity={0.4} />
           <Path d={iconData[4][1]} fill={color} />
-        </Fragment>
+        </>
       ) : (
-        <Fragment>
+        <>
           <Path d={iconData[4]} fill={color} />
-        </Fragment>
+        </>
       )}
     </Svg>
   );
